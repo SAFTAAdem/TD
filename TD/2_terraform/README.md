@@ -23,8 +23,23 @@ sont ignorés par Git.
 
 ## Résultats des plans
 
-Les plans doivent être exécutés avec les identifiants Cloud de l'étudiant.
-Leur sortie peut ensuite être enregistrée avec :
+### GCP
+
+Le plan GCP a été généré avec le compte de service du cours :
+
+```text
+Plan: 12 to add, 0 to change, 0 to destroy.
+```
+
+La sortie complète se trouve dans
+[`foundation-gcp/plan-gcp.txt`](foundation-gcp/plan-gcp.txt).
+
+### AWS
+
+Le plan AWS doit être généré après configuration de nouveaux identifiants,
+la clé précédemment exposée ayant été écartée pour des raisons de sécurité.
+
+Commande d'export d'un plan :
 
 ```powershell
 terraform show -no-color plan.tfplan | Out-File -Encoding utf8 plan.txt
