@@ -1,0 +1,5 @@
+project_id     = "polytech-dijon"
+region         = "europe-west1"
+zone           = "europe-west1-b"
+instance_count = 2
+dns_name       = "adem-cloud.example."
