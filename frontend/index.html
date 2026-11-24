@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Première page web servie depuis un conteneur Nginx."
+    />
+    <title>Mon premier conteneur</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="hero">
+      <section class="card" aria-labelledby="page-title">
+        <div class="icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <p class="eyebrow">TD Conteneurisation</p>
+        <h1 id="page-title">Mon front-end est en ligne&nbsp;!</h1>
+        <p class="intro">
+          Cette page statique est servie par <strong>Nginx</strong> depuis un
+          conteneur <strong>Docker</strong>.
+        </p>
+
+        <div class="status" role="status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Le serveur fonctionne correctement
+        </div>
+
+        <div class="steps" aria-label="Étapes du déploiement">
+          <div class="step">
+            <span>01</span>
+            <p>Page créée</p>
+          </div>
+          <div class="line" aria-hidden="true"></div>
+          <div class="step">
+            <span>02</span>
+            <p>Image construite</p>
+          </div>
+          <div class="line" aria-hidden="true"></div>
+          <div class="step">
+            <span>03</span>
+            <p>Conteneur lancé</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>Docker · Nginx · HTML &amp; CSS</footer>
+  </body>
+</html>
